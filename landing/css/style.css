@@ -1,0 +1,89 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+  --color-def: #10829a;
+  --color-def-hover: #2591a9;
+  --color-text: #404144;
+}
+/* Default */
+body{
+  color: var(--color-text);
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+a{
+  color: inherit;
+}
+
+.container{
+  max-width: 1246px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Header START */
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e1e5eb;
+}
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+}
+
+.header__logo{
+  font-size: 26px;
+  line-height: 1.15;
+  color: var(--color-def);
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 35px;
+}
+
+.menu ul a{
+  font-weight: 400;
+}
+
+.header-auth{
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.header-auth address a{
+  color: #353535;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.btn-login{
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--color-def-hover);
+  cursor: pointer;
+}
+
+.btn-registration{
+  background-color: #d9f2f7;
+  background-image: linear-gradient(0deg, #e5f2f4, #e5f2f4);
+  border-radius: 8px;
+  color: #12849c;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+  max-width: 137px;
+  padding: 11px 21px;
+  text-align: center;
+}
+/* Header END */
